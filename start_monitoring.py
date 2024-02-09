@@ -31,7 +31,7 @@ if __name__ == "__main__":
     
         print("app_status.db created successfully...")
  
-        print("Generating app status to 1[true]...")
+        print("Generating app status as 1[true]...")
         main_connection.execute(''' 
            INSERT INTO app_status VALUES(1);
          ''')
