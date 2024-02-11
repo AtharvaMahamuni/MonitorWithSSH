@@ -37,11 +37,11 @@ if __name__ == "__main__":
          ''')
         
         print("Entering into the monitoring daemon...")
-        inside_daemon = 1
+        inside_daemon = 0
         while 1:
-            if inside_daemon:
+            if not inside_daemon:
                 print("Inside the monitoring daemon...")
-                inside_daemon = 0
+                inside_daemon = 1
                 
             start_work()
             
